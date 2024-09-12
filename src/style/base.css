@@ -1,0 +1,266 @@
+/*Reset*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+:root {
+    --cor-texto-principal: #ffffff;
+    --fonte-textos: "Roboto", sans-serif;
+    --azul-fundo: #000;
+    --cinza-claro: #999;
+    --cinza-escuro: #666;
+    --cinza: rgba(13, 13, 13, 0.2);
+    --gradiente: linear-gradient(53deg, #1a1a1a 2%, #333333 40%, #4d4d4d 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--cor-texto-principal);
+    background: var(--gradiente);
+    font-family: var(--fonte-textos);
+}
+
+button{
+    font-family: var(--fonte-textos);
+}
+
+main {
+    margin-bottom: 3.43rem;
+}
+
+.container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/*Aside*/
+
+.menu-lateral {
+    background-color: var(--azul-fundo);
+    padding: 2.5rem .5rem 0;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+
+.menu-lateral li {
+    padding-bottom: 1.5rem;
+}
+
+.modoClaroLi{
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral__link::before  {
+    padding-left: 1rem;
+    padding-right: .5rem;
+    vertical-align: middle;
+}
+
+.menu-lateral__link {
+    font-family: var(--fonte-textos);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+}
+
+.ativo {
+    color: var(--azul-neon);
+}
+
+.menu-lateral__link button img {
+    padding: 0 .5rem;
+}
+
+.menu-lateral__playlist {
+    padding-left: 1rem;
+    user-select: none;
+}
+
+.pesquisarBtn{
+    width: 150px;
+    height: 40px;
+
+    border: solid 1px var(--azul-fundo);
+    border-radius: 1.7rem;
+    background-color: var(--azul-fundo);
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.pesquisarBtn:hover{
+    background-color: var(--cinza-escuro);
+}
+/*Header*/
+.cabecalho{
+    padding: 1rem;
+}
+
+.container__pesquisa{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .5rem;
+
+    justify-content: center;
+}
+
+.campoPesquisa{  
+  width: 40%;
+  height: 38px;
+
+  color: var(--cor-texto-principal);
+   
+  border-radius: 15px;
+  border: solid 2px var(--azul-fundo);
+  box-shadow: 2px 2px 2px #888888;    
+  background-color:  #5a5a5a;
+}
+
+
+input::placeholder{
+    font-family: var(--fonte-textos);
+    color: var(--cor-texto-principal);
+}
+
+.cabecalho__botao:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+/*Main*/
+
+/*Estilos compartilhados pelos elementos presentes na seção horizontal e elementos da seção vertical*/
+.secao__titulo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    user-select: none;
+}
+
+.cartao { 
+    background: var(--cinza);
+    border-radius: .5rem;
+}
+
+.cartao:hover{
+    background-color: var(--cinza-escuro);
+}
+
+.cartao__titulo {
+    font-weight: 700;
+    line-height: 1.35rem;
+}
+
+.secaoPesquica{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1500px;
+}
+
+/*Seção horizontal*/
+
+.secao-horizontal .cartao {
+    overflow: hidden;
+}
+
+.secao-horizontal .cartao__imagem {
+    height: 4.58rem;
+}
+
+.secao-horizontal .cartao__player {
+    width: 10.25rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.secao-horizontal .cartao__botao {
+    padding-right: .75rem;
+}
+
+.estruturaDeIcones{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.campoResuldadoFlex{
+    width: 21%;
+}
+
+/*Seção vertical*/
+.secao-vertical .cartao {
+    padding: 1rem;
+}
+
+.secao-vertical .cartao__imagem {
+    height: 9.75rem;
+    margin-bottom: .5rem;
+    object-fit: contain;
+}
+
+.secao-vertical .cartao__subtitulo {
+    margin-top: .75rem;
+}
+
+.secao__cartoes::-webkit-scrollbar {
+    height: .5rem;
+    row-gap: none;
+}
+  
+.secao__cartoes::-webkit-scrollbar-thumb {
+    background-color: var(--cinza-claro);
+    border-radius: .5rem;
+}
+  
+.secao__cartoes::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cinza-escuro);
+}
+  
+.secao__cartoes::-webkit-scrollbar-track {
+    background-color: var(--gradiente);
+} 
+ 
+/*Navbar*/
+.navbar {
+    background-color: var(--azul-fundo);
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.navbar__items {
+    width: 80%;
+    margin: .5rem auto;
+}
+
+.navbar__item {
+    font-size: .75rem;
+}
+
+.navbar__item::before {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+/*Cocigo do modo claro e escuro*/
+
+.claro{
+    color: #000;
+    --azul-fundo: #D3D3D3;
+    --gradiente: linear-gradient(53deg, #e6e6e6 2%, #f2f2f2 40%, #ffffff 100%);
+}
+
+
