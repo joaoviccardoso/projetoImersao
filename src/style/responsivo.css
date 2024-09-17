@@ -19,11 +19,26 @@
     }   
 
     .cabecalho {
-        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .secao-horizontal .cartao {
         column-gap: .5rem;
+    }
+
+    .container__pesquisa{
+        flex-direction: column-reverse;
+    }
+
+    .pesquisarBtn{
+        width: 50%;
+    }
+
+    .lupaPesquisa{
+        display: none;
     }
 
     .secao-horizontal .cartao__imagem {
@@ -43,11 +58,6 @@
     .container__pesquisa{
         align-items: center;
         justify-content: center;
-    }
-
-    .cabecalho__logo{
-        margin-left: 22%;
-        margin-right: 30%;
     }
 
     .campoPesquisa{  

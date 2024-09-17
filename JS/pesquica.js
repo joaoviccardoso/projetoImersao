@@ -39,12 +39,13 @@ btnPesquisar.addEventListener('click', () => {
             // Se sim, adiciona o elemento correspondente ao resultado da pesquisa.
 
             resultado += `
-                <div class="campoResuldadoFlex">
-                    <a href="${dado.link}">
-                        <img class="cartao__imagem" src="${dado.img}" alt="${dado.titulo}" width="215">
+                <div class="containerArtista">
+                    <a class="link-artista" href="${dado.link}">
+                        <img class="img-artista" src="${dado.img}" alt="${dado.titulo}">
                         <h3 class="cartao__titulo">${dado.titulo}</h3>
                     </a>
-                </div>`;
+                </div>    
+                `;
         }
     }
  

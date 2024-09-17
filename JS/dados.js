@@ -315,6 +315,28 @@ let dadosArtista = [
         titulo: "Lizzo",
         link: "https://www.instagram.com/lizzobeeating/",
         genero: "pop"  
-    }
+    },
+
+    {
+        img: "src/imagens/Imagens/artistas/zeze di camargo.jpeg",
+        titulo: "Zezé Di Camargo & Luciano",
+        link: "https://www.instagram.com/zezedicamargoeluciano/",
+        genero: "Sertanejo"  
+    },
+
+    {
+        img: "src/imagens/Imagens/artistas/jorgeEmatheus.jpg",
+        titulo: "Jorge & Mateus",
+        link: "https://www.instagram.com/jorgeemateus/",
+        genero: "Sertanejo"  
+    },
+
+    {
+        img: "src/imagens/Imagens/artistas/henruique.webp",
+        titulo: "Henrique & Juliano",
+        link: "https://www.instagram.com/henriqueejuliano/?hl=pt-br",
+        genero: "Sertanejo"  
+    },
+
 
 ]
